@@ -11,11 +11,11 @@
     <title>Formulario Renovación HU_12</title>
 </head>
 
-<body class="sapCpBody">
+<body class="sapCpBody cuerpo">
     <form id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage"
         action="integrationScript.php" method="POST"
         data-sap-cp-key="836DEEA19A6CA5374908EECBF7C0EC52C37573C9"
-        class="sapCpContentPage sapCRLPage sapCpContentPageLoading Formulario" data-sap-cp-lpkey="" data-sap-cp-prefill-data="true"
+        class="sapCpContentPage sapCRLPage sapCpContentPageLoading formulario" data-sap-cp-lpkey="" data-sap-cp-prefill-data="true"
         data-sap-cp-progres-enabled="true" data-sap-cp-progres-max="1" data-sap-cp-version="20.0.5">
         <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L"
             data-sap-cp-key="F0E7C2723950C6144B59C8A9C09A1DE1E66BA351"
