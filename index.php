@@ -43,10 +43,7 @@
                 data-sap-cp-key="1A1A2F91E0B5E511E30F36256F0A3CC083EA3EE9"
                 class="sapCpWidget sapCRLWidget sapCpTextWidget" data-sap-cp-wprogres-enabled="false">
                 <div class="sapCpWidgetContentNoIndent sapCRLWidgetContentNoIndent">
-                    <p style="text-align: left"><span style="font-size: 12pt"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #000080">&nbsp;
-                                    &nbsp; &nbsp; &nbsp; Selecciona solo una opción para renovar</span></strong></span>
+                    <p style="text-align: left"><span style="font-size: 12pt"><strong> <span style="" class="instrucciones">Selecciona solo una opción para renovar</span></strong></span>
                     </p>
                 </div>
             </div>
