@@ -44,7 +44,7 @@
                 data-sap-cp-key="1A1A2F91E0B5E511E30F36256F0A3CC083EA3EE9"
                 class="sapCpWidget sapCRLWidget sapCpTextWidget" data-sap-cp-wprogres-enabled="false">
                 <div class="sapCpWidgetContentNoIndent sapCRLWidgetContentNoIndent">
-                    <p style="text-align: left"><span style="font-size: 12pt"><strong> <span style="" class="instrucciones">Selecciona solo una opción para renovar</span></strong></span>
+                    <p style="text-align: left"><span><strong> <span style="" class="instrucciones">Selecciona solo una opción para renovar</span></strong></span>
                     </p>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"
                     style=" "></div>
                 <div class="sapCpWidgetContent sapCRLWidgetContent sapCRLWidgetContentLeft contenedor-btn">
-                    <button id="__button46" class="sapCpButton btn-principal" type="button" style="font-size: 22px !important;">Enviar</button><span id="__text435"
+                    <button id="__button46" class="sapCpButton btn-principal" type="button">Enviar</button><span id="__text435"
                         class="sapCpText sapCpButtonWidgetExtraText sapCpMissingMandatoryFieldText sapCpMissingMandatoryFieldLabel">Rellene
                         todos los campos correctamente.</span><span id="__text436"
                         class="sapCpText sapCpButtonWidgetExtraText sapCpErrorMessageText">Se ha producido un error
