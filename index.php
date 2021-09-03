@@ -11,12 +11,6 @@
     <title>Formulario Renovación HU_12</title>
 </head>
 
-<style>
-    *{
-        font-size: 19px !important;
-    }
-
-</style>
 
 <body class="sapCpBody cuerpo">
     <form id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage"
@@ -39,10 +33,10 @@
                 data-sap-cp-wprogres-enabled="false">
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"
                     style=" "><label id="__label44" class="sapCpLabel sapCpLabelRequired input-lbl"
-                        for="__input21" style="margin-top: 10px; width: 75px !important;">Teléfono</label></div>
+                        for="__input21" style="margin-top: 10px; width: 100px !important; font-size: 19px;">Teléfono</label></div>
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
                     <input id="__input21" class="sapCpInput txt-input" type="tel" value="+569" required="required" maxlength="12"
-                        data-sap-cp-validationmessage="El número de teléfono debe tener un símbolo de suma (+) y 5 o más dígitos.">
+                        data-sap-cp-validationmessage="El número de teléfono debe tener un símbolo de suma (+) y 5 o más dígitos." style="font-size: 19px;">
                 </div>
                 <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
             </div>
@@ -89,7 +83,7 @@
                     style=" "></div>
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
                     <div id="__box14" class="sapCpCheckBox"><input type="checkbox"class="radio" name="fooby[1][]" value="1"></div><label id="__label47"
-                        class="sapCpLabel sapCpLabelRequiredBefore">Me interesa renovar mi vehículo</label>
+                        class="sapCpLabel sapCpLabelRequiredBefore" style="font-size: 19px !important;">Me interesa renovar mi vehículo</label>
                 </div>
                 <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
             </div>
@@ -101,7 +95,7 @@
                     style=" "></div>
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
                     <div id="__box15" class="sapCpCheckBox"><input type="checkbox"class="radio" name="fooby[1][]" value="1"></div><label id="__label48"
-                        class="sapCpLabel sapCpLabelRequiredBefore">No quiero la Renovación</label>
+                        class="sapCpLabel sapCpLabelRequiredBefore" style="font-size: 19px !important;">No quiero la Renovación</label>
                 </div>
                 <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
             </div>
@@ -112,7 +106,7 @@
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"
                     style=" "></div>
                 <div class="sapCpWidgetContent sapCRLWidgetContent sapCRLWidgetContentLeft contenedor-btn">
-                    <button id="__button46" class="sapCpButton btn-principal" type="button">Enviar</button><span id="__text435"
+                    <button id="__button46" class="sapCpButton btn-principal" type="button" style="font-size: 22px !important;">Enviar</button><span id="__text435"
                         class="sapCpText sapCpButtonWidgetExtraText sapCpMissingMandatoryFieldText sapCpMissingMandatoryFieldLabel">Rellene
                         todos los campos correctamente.</span><span id="__text436"
                         class="sapCpText sapCpButtonWidgetExtraText sapCpErrorMessageText">Se ha producido un error
