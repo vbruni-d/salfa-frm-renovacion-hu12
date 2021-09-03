@@ -11,6 +11,13 @@
     <title>Formulario Renovación HU_12</title>
 </head>
 
+<style>
+    *{
+        font-size: 19px !important;
+    }
+
+</style>
+
 <body class="sapCpBody cuerpo">
     <form id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage"
         action="integrationScript.php" method="POST"
@@ -32,7 +39,7 @@
                 data-sap-cp-wprogres-enabled="false">
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"
                     style=" "><label id="__label44" class="sapCpLabel sapCpLabelRequired input-lbl"
-                        for="__input21" style="margin-top: 10px;">Teléfono</label></div>
+                        for="__input21" style="margin-top: 10px; width: 75px !important;">Teléfono</label></div>
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
                     <input id="__input21" class="sapCpInput txt-input" type="tel" value="+569" required="required" maxlength="12"
                         data-sap-cp-validationmessage="El número de teléfono debe tener un símbolo de suma (+) y 5 o más dígitos.">
