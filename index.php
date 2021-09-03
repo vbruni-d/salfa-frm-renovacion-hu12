@@ -104,7 +104,7 @@
                 data-sap-cp-wprogres-enabled="false">
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"
                     style=" "></div>
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
+                <div class="sapCpWidgetContent sapCRLWidgetContent sapCRLWidgetContentLeft contenedor-btn">
                     <button id="__button46" class="sapCpButton btn-principal" type="button">Enviar</button><span id="__text435"
                         class="sapCpText sapCpButtonWidgetExtraText sapCpMissingMandatoryFieldText sapCpMissingMandatoryFieldLabel">Rellene
                         todos los campos correctamente.</span><span id="__text436"
@@ -140,7 +140,7 @@
                                                 <a href="https://www.youtube.com/user/SalfaChile">
                                                 <img src="./assets/da008e5e-2941-4576-b9f7-8e2df5d0c2a8.png" width="23" alt="Youtube"></a>
                                             </td>
-                        
+
                                             <td width="50%" class="footerSpaceRrss">
                                                 &nbsp;
                                             </td>
@@ -163,7 +163,7 @@
                                                     <strong style="font-size:18px;">salfa.cl</strong>
                                                 </a>
                                             </td>
-                    
+
                                             <td width="40%" class="footerSpace">
                                                 &nbsp;
                                             </td>
