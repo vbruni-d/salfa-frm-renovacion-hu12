@@ -38,16 +38,27 @@
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"><input id="__input65" class="sapCpInput txt-input" type="text" required="required" maxlength="10" oninput="checkRut(this);" name="rut"></div>
                 <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
             </div>
-            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-2W" data-sap-cp-key="66278973025179DD192D59D88329532EE4DA8D4D" class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpContactAttribute-TELNR_MOBILE" data-sap-cp-wprogres-enabled="true" data-sap-cp-wprogres-prio="20">
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"  ><label id="__label110" class="sapCpLabel input-lbl" for="__input66">Teléfono móvil</label></div>
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"><input id="__input66" class="sapCpInput txt-input" type="tel" value="+569" maxlength="12" data-sap-cp-validationmessage="El número de teléfono debe tener un símbolo de suma (+) y 5 o más dígitos."></div>
-                <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
-            </div>
+            
             <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-3W" data-sap-cp-key="74DE69F90AEE2F72E1FC6BC75EB6E291291938F1" class="sapCpWidget sapCRLWidget sapCpTextWidget" data-sap-cp-wprogres-enabled="false">
                 <div class="sapCpWidgetContentNoIndent sapCRLWidgetContentNoIndent instrucciones">
                     <p><span style="font-size: 12pt"><strong><span >¿Estas considerando poder renovar tú vehículo?</span></strong></span></p>
                 </div>
             </div>
+
+
+            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-2W" data-sap-cp-key="66278973025179DD192D59D88329532EE4DA8D4D" class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpContactAttribute-TELNR_MOBILE" data-sap-cp-wprogres-enabled="true" data-sap-cp-wprogres-prio="20">
+                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
+                    <label id="__label110" class="sapCpLabel input-lbl" for="__input66">Teléfono móvil</label>
+                </div>
+                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
+                    <input id="__input66" class="sapCpInput txt-input" type="tel" value="+569" maxlength="12" data-sap-cp-validationmessage="El número de teléfono debe tener un símbolo de suma (+) y 5 o más dígitos.">
+                </div>
+                <div class="sapCpWidgetFixContent sapCRLWidgetFixContent">
+                    
+                </div>
+            </div>
+
+
             <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-4W" data-sap-cp-key="192E9C7166E987495F83E65776F204F7916591BB" class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpWidgetHidden sapCpCInteractionAttribute-YY1_RENOVACION1_MIA sapCpContactAttribute-" data-sap-cp-wprogres-enabled="false">
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"  ><label id="__label111" class="sapCpLabel" for="__down29">Renovacion</label></div>
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"><select id="__down29" class="sapCpDropDown">
