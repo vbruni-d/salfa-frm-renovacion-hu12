@@ -247,7 +247,7 @@
 
     $(function() {
 
-        $('#__input26').keydown(function (e) {
+        $('#__input66').keydown(function (e) {
 
             if (e.shiftKey || e.ctrlKey || e.altKey) {
 
