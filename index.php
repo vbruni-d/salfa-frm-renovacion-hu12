@@ -15,50 +15,47 @@
 <body class="sapCpBody cuerpo">
     <form id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage" data-sap-cp-key="53778308B371A4684DDABABAE4E22F6B1E20E912" class="sapCpContentPage sapCRLPage sapCpContentPageLoading formulario" data-sap-cp-lpkey="" data-sap-cp-prefill-data="true" data-sap-cp-progres-enabled="true" data-sap-cp-progres-max="1" data-sap-cp-version="20.0.5">
         <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L" data-sap-cp-key="2573E92CD3674E2D05B2239FB282DD33368E4333" class="sapCpLayout sapCRLLayout sapCRLLayoutVertical">
-            
+
             <div style="display: flex; justify-content: center; margin-bottom: 30px;">
                 <img src="./assets/5774fcbd-8e46-4be1-babf-ea0d892eb853.png" style="width: 150px;">
             </div>
-        
+
             <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-0W" data-sap-cp-key="12352EF156688658738A4E8DF52C64A935862301" class="sapCpWidget sapCRLWidget sapCpTextWidget contenedor-titulo" data-sap-cp-wprogres-enabled="false">
-                
+
                 <div>
                     <p class="titulo">¡Hola!</p>
                 </div>
 
                 <div>
-                    <p class="subtitulo">Te invitamos a conocer las nuevas posibilidades de renovación que estan dispoibles para ti. </p>
-                    <p>Cuentas con diferentes opciones de financiamiento para renovar tu vehículo 2022</p>
-                    <p>Completa el siguiente formulario y nos pondremos en contacto prontamente.</p>
+                    <p class="subtitulo">Te invitamos a conocer las nuevas posibilidades de renovación que estan disponibles para ti. </p>
+                    <p class="subtitulo-2">Cuentas con diferentes opciones de financiamiento para renovar tu vehículo 2022</p>
+                    <p class="subtitulo-3">Completa el siguiente formulario y nos pondremos en contacto prontamente.</p>
                 </div>
-            
+
             </div>
             <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-1W" data-sap-cp-key="51F216548E278AA2B0B7F7CABC8D5960C325D670" class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpWidgetMandatory sapCpContactAttribute-YY1_RUT_ENH" data-sap-cp-wprogres-enabled="true" data-sap-cp-wprogres-prio="10">
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"  ><label id="__label109" class="sapCpLabel sapCpLabelRequired input-lbl" for="__input65">Rut</label></div>
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"><input id="__input65" class="sapCpInput txt-input" type="text" required="required" maxlength="10" oninput="checkRut(this);" name="rut"></div>
                 <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
             </div>
-            
-            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-3W" data-sap-cp-key="74DE69F90AEE2F72E1FC6BC75EB6E291291938F1" class="sapCpWidget sapCRLWidget sapCpTextWidget" data-sap-cp-wprogres-enabled="false">
-                <div class="sapCpWidgetContentNoIndent sapCRLWidgetContentNoIndent instrucciones">
-                    <p><span style="font-size: 12pt"><strong><span >¿Estas considerando poder renovar tú vehículo?</span></strong></span></p>
-                </div>
-            </div>
-
 
             <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-2W" data-sap-cp-key="66278973025179DD192D59D88329532EE4DA8D4D" class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpContactAttribute-TELNR_MOBILE" data-sap-cp-wprogres-enabled="true" data-sap-cp-wprogres-prio="20">
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
-                    <label id="__label110" class="sapCpLabel input-lbl" for="__input66">Teléfono móvil</label>
+                    <label id="__label110" class="sapCpLabel input-lbl" for="__input66">Teléfono</label>
                 </div>
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
                     <input id="__input66" class="sapCpInput txt-input" type="tel" value="+569" maxlength="12" data-sap-cp-validationmessage="El número de teléfono debe tener un símbolo de suma (+) y 5 o más dígitos.">
                 </div>
                 <div class="sapCpWidgetFixContent sapCRLWidgetFixContent">
-                    
+
                 </div>
             </div>
 
-
+            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-3W" data-sap-cp-key="74DE69F90AEE2F72E1FC6BC75EB6E291291938F1" class="sapCpWidget sapCRLWidget sapCpTextWidget" data-sap-cp-wprogres-enabled="false">
+                <div class="sapCpWidgetContentNoIndent sapCRLWidgetContentNoIndent instrucciones">
+                    <p><span style="font-size: 12pt"><strong><span >¿Estas considerando poder renovar tú vehículo?</span></strong></span></p>
+                </div>
+            </div>
             <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-4W" data-sap-cp-key="192E9C7166E987495F83E65776F204F7916591BB" class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpWidgetHidden sapCpCInteractionAttribute-YY1_RENOVACION1_MIA sapCpContactAttribute-" data-sap-cp-wprogres-enabled="false">
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"  ><label id="__label111" class="sapCpLabel" for="__down29">Renovacion</label></div>
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"><select id="__down29" class="sapCpDropDown">
@@ -187,7 +184,7 @@
 
 <script>
 
-    
+
 
     function checkRut(rut) {
         // Despejar Puntos

@@ -392,7 +392,7 @@
                     this.prepareRegionNode(i);
                 }
                 if (R.Setting.get(i, "wProgres-enabled") === "true") {
-                    R.CSS.toggleClass(i, "sapCpWidgetHidden", true);
+                    R.CSS.toggleClass(i, "sapCpWidgetHidden", false);
                     if (R.CSS.hasClass(i, "sapCpWidgetMandatory")) {
                         if (R.Node.getFirstWithClassName(i, "sapCpInput")) {
                             R.Node.getFirstWithClassName(i, "sapCpInput").removeAttribute("required");
