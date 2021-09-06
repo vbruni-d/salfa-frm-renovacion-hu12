@@ -32,7 +32,7 @@
                 class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpWidgetMandatory sapCpContactAttribute-TELNR_MOBILE"
                 data-sap-cp-wprogres-enabled="false">
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"
-                    style=" "><label id="__label44" class="sapCpLabel sapCpLabelRequired input-lbl"
+                    ><label id="__label44" class="sapCpLabel sapCpLabelRequired input-lbl"
                         for="__input21" style="margin-top: 10px; width: 100px !important; font-size: 19px;">Teléfono</label></div>
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
                     <input id="__input21" class="sapCpInput txt-input" type="tel" value="+569" required="required" maxlength="12"
@@ -44,7 +44,7 @@
                 data-sap-cp-key="1A1A2F91E0B5E511E30F36256F0A3CC083EA3EE9"
                 class="sapCpWidget sapCRLWidget sapCpTextWidget" data-sap-cp-wprogres-enabled="false">
                 <div class="sapCpWidgetContentNoIndent sapCRLWidgetContentNoIndent">
-                    <p style="text-align: left"><span><strong> <span style="" class="instrucciones">Selecciona solo una opción para renovar</span></strong></span>
+                    <p style="text-align: left"><span><strong> <span class="instrucciones">Selecciona solo una opción para renovar</span></strong></span>
                     </p>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                 class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpWidgetHidden sapCpCInteractionAttribute-YY1_RENOVACION1_MIA sapCpContactAttribute-"
                 data-sap-cp-wprogres-enabled="false">
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"
-                    style=" "><label id="__label45" class="sapCpLabel" for="__down14">Renovación</label></div>
+                    ><label id="__label45" class="sapCpLabel" for="__down14">Renovación</label></div>
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
                     <select id="__down14" class="sapCpDropDown">
                         <option label="Interesado" value="101" selected="selected">Interesado</option>
@@ -66,7 +66,7 @@
                 class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpWidgetHidden sapCpCInteractionAttribute-YY1_RENOVACION1_MIA sapCpContactAttribute-"
                 data-sap-cp-wprogres-enabled="false">
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"
-                    style=" "><label id="__label46" class="sapCpLabel" for="__down15">No quiero
+                    ><label id="__label46" class="sapCpLabel" for="__down15">No quiero
                         renovación</label></div>
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
                     <select id="__down15" class="sapCpDropDown">
@@ -80,7 +80,7 @@
                 class="sapCpWidget sapCRLWidget sapCpInteractionWidget sapCpCheckBoxElementWidget"
                 data-sap-cp-wprogres-enabled="false">
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"
-                    style=" "></div>
+                    ></div>
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
                     <div id="__box14" class="sapCpCheckBox"><input type="checkbox"class="radio" name="fooby[1][]" value="1"></div><label id="__label47"
                         class="sapCpLabel sapCpLabelRequiredBefore" style="font-size: 19px !important;">Me interesa renovar mi vehículo</label>
@@ -92,7 +92,7 @@
                 class="sapCpWidget sapCRLWidget sapCpInteractionWidget sapCpCheckBoxElementWidget"
                 data-sap-cp-wprogres-enabled="false">
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"
-                    style=" "></div>
+                    ></div>
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
                     <div id="__box15" class="sapCpCheckBox"><input type="checkbox"class="radio" name="fooby[1][]" value="1"></div><label id="__label48"
                         class="sapCpLabel sapCpLabelRequiredBefore" style="font-size: 19px !important;">No quiero la Renovación</label>
@@ -104,7 +104,7 @@
                 class="sapCpWidget sapCRLWidget sapCpButtonWidget" data-sap-cp-follow-up-action="02"
                 data-sap-cp-wprogres-enabled="false">
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"
-                    style=" "></div>
+                    ></div>
                 <div class="sapCpWidgetContent sapCRLWidgetContent sapCRLWidgetContentLeft contenedor-btn">
                     <button id="__button46" class="sapCpButton btn-principal" type="button">Enviar</button><span id="__text435"
                         class="sapCpText sapCpButtonWidgetExtraText sapCpMissingMandatoryFieldText sapCpMissingMandatoryFieldLabel">Rellene

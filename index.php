@@ -28,7 +28,7 @@
 
                 <div>
                     <p class="subtitulo">Te invitamos a conocer las nuevas posibilidades de renovación que estan disponibles para ti. </p>
-                    <p class="subtitulo-2">Cuentas con diferentes opciones de financiamiento para renovar tu vehículo 2022</p>
+                    <p class="subtitulo-2">Cuentas con diferentes opciones de financiamiento para renovar tu vehículo.</p>
                     <p class="subtitulo-3">Completa el siguiente formulario y nos pondremos en contacto prontamente.</p>
                 </div>
 
@@ -191,45 +191,32 @@
         var valor = rut.value.replace('.','');
         // Despejar Guión
         valor = valor.replace('-','');
-
         // Aislar Cuerpo y Dígito Verificador
         cuerpo = valor.slice(0,-1);
         dv = valor.slice(-1).toUpperCase();
-
         // Formatear RUN
         rut.value = cuerpo + '-'+ dv
-
         // Si no cumple con el mínimo ej. (n.nnn.nnn)
         if(cuerpo.length < 7) { rut.setCustomValidity("RUT Incompleto"); return false;}
-
         // Calcular Dígito Verificador
         suma = 0;
         multiplo = 2;
-
         // Para cada dígito del Cuerpo
         for(i=1;i<=cuerpo.length;i++) {
-
             // Obtener su Producto con el Múltiplo Correspondiente
             index = multiplo * valor.charAt(cuerpo.length - i);
-
             // Sumar al Contador General
             suma = suma + index;
-
             // Consolidar Múltiplo dentro del rango [2,7]
             if(multiplo < 7) { multiplo = multiplo + 1; } else { multiplo = 2; }
-
         }
-
         // Calcular Dígito Verificador en base al Módulo 11
         dvEsperado = 11 - (suma % 11);
-
         // Casos Especiales (0 y K)
         dv = (dv == 'K')?10:dv;
         dv = (dv == 0)?11:dv;
-
         // Validar que el Cuerpo coincide con su Dígito Verificador
         if(dvEsperado != dv) { rut.setCustomValidity("RUT Inválido"); return false; }
-
         // Si todo sale bien, eliminar errores (decretar que es válido)
         rut.setCustomValidity('');
     }
@@ -246,29 +233,30 @@
     });
 
     $(function() {
-
-        $('#__input66').keydown(function (e) {
-
-            if (e.shiftKey || e.ctrlKey || e.altKey) {
-
+        $('#__input65').keydown(function (e) {
+            if (e.ctrlKey || e.altKey) {
                 e.preventDefault();
-
             } else {
-
                 var key = e.keyCode;
-
-                if (!((key == 8) || (key == 46) || (key >= 35 && key <= 40) || (key >= 48 && key <= 57) || (key == 107) || (key >= 96 && key <= 105) )) {
-
+                if (!((key == 8) || (key == 46) || (key >= 35 && key <= 40) || (key >= 48 && key <= 57) || (key == 109) || (key >= 96 && key <= 105) || (key == 189)|| (key == 75))) {
                     e.preventDefault();
-
                 }
-
             }
-
         });
-
     });
 
+    $(function() {
+        $('#__input66').keydown(function (e) {
+            if (e.shiftKey || e.ctrlKey || e.altKey) {
+                e.preventDefault();
+            } else {
+                var key = e.keyCode;
+                if (!((key == 8) || (key == 46) || (key >= 35 && key <= 40) || (key >= 48 && key <= 57) || (key == 107) || (key >= 96 && key <= 105) )) {
+                    e.preventDefault();
+                }
+            }
+        });
+    });
 
 
 
