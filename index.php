@@ -5,119 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./assets/cropped-favsalfa-180x180.png">
     <link type="text/css" rel="stylesheet" href="./sapContentPage.css">
     <script src="./sapContentPage.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <title>Formulario Renovación HU_12</title>
+    <title>Formulario Renovación</title>
 </head>
 
-
 <body class="sapCpBody cuerpo">
-    <form id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage"
-        action="integrationScript.php" method="POST"
-        data-sap-cp-key="836DEEA19A6CA5374908EECBF7C0EC52C37573C9"
-        class="sapCpContentPage sapCRLPage sapCpContentPageLoading formulario" data-sap-cp-lpkey="" data-sap-cp-prefill-data="true"
-        data-sap-cp-progres-enabled="true" data-sap-cp-progres-max="1" data-sap-cp-version="20.0.5">
-
-        <div style="display: flex; justify-content: center; margin-bottom: 50px;">
-            <img src="./assets/5774fcbd-8e46-4be1-babf-ea0d892eb853.png" style="width: 200px;">
-        </div>
-
-
-        <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L"
-            data-sap-cp-key="F0E7C2723950C6144B59C8A9C09A1DE1E66BA351"
-            class="sapCpLayout sapCRLLayout sapCRLLayoutVertical">
-            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-0W"
-                data-sap-cp-key="50858D431266F0FEACB518B3766E90F943A57FA7"
-                class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpWidgetMandatory sapCpContactAttribute-TELNR_MOBILE"
-                data-sap-cp-wprogres-enabled="false">
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"
-                    style=" "><label id="__label44" class="sapCpLabel sapCpLabelRequired input-lbl"
-                        for="__input21" style="margin-top: 10px; width: 100px !important; font-size: 19px;">Teléfono</label></div>
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
-                    <input id="__input21" class="sapCpInput txt-input" type="tel" value="+569" required="required" maxlength="12"
-                        data-sap-cp-validationmessage="El número de teléfono debe tener un símbolo de suma (+) y 5 o más dígitos." style="font-size: 19px;">
+    <form id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage" data-sap-cp-key="53778308B371A4684DDABABAE4E22F6B1E20E912" class="sapCpContentPage sapCRLPage sapCpContentPageLoading formulario" data-sap-cp-lpkey="" data-sap-cp-prefill-data="true" data-sap-cp-progres-enabled="true" data-sap-cp-progres-max="1" data-sap-cp-version="20.0.5">
+        <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L" data-sap-cp-key="2573E92CD3674E2D05B2239FB282DD33368E4333" class="sapCpLayout sapCRLLayout sapCRLLayoutVertical">
+            
+            <div style="display: flex; justify-content: center; margin-bottom: 30px;">
+                <img src="./assets/5774fcbd-8e46-4be1-babf-ea0d892eb853.png" style="width: 150px;">
+            </div>
+        
+            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-0W" data-sap-cp-key="12352EF156688658738A4E8DF52C64A935862301" class="sapCpWidget sapCRLWidget sapCpTextWidget contenedor-titulo" data-sap-cp-wprogres-enabled="false">
+                
+                <div>
+                    <p class="titulo">¡Hola!</p>
                 </div>
+
+                <div>
+                    <p class="subtitulo">Te invitamos a conocer las nuevas posibilidades de renovación que estan dispoibles para ti. </p>
+                    <p>Cuentas con diferentes opciones de financiamiento para renovar tu vehículo 2022</p>
+                    <p>Completa el siguiente formulario y nos pondremos en contacto prontamente.</p>
+                </div>
+            
+            </div>
+            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-1W" data-sap-cp-key="51F216548E278AA2B0B7F7CABC8D5960C325D670" class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpWidgetMandatory sapCpContactAttribute-YY1_RUT_ENH" data-sap-cp-wprogres-enabled="true" data-sap-cp-wprogres-prio="10">
+                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"  ><label id="__label109" class="sapCpLabel sapCpLabelRequired input-lbl" for="__input65">Rut</label></div>
+                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"><input id="__input65" class="sapCpInput txt-input" type="text" required="required" maxlength="10" oninput="checkRut(this);" name="rut"></div>
                 <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
             </div>
-            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-1W"
-                data-sap-cp-key="1A1A2F91E0B5E511E30F36256F0A3CC083EA3EE9"
-                class="sapCpWidget sapCRLWidget sapCpTextWidget" data-sap-cp-wprogres-enabled="false">
-                <div class="sapCpWidgetContentNoIndent sapCRLWidgetContentNoIndent">
-                    <p style="text-align: left"><span><strong> <span style="" class="instrucciones">Selecciona solo una opción para renovar</span></strong></span>
-                    </p>
+            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-2W" data-sap-cp-key="66278973025179DD192D59D88329532EE4DA8D4D" class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpContactAttribute-TELNR_MOBILE" data-sap-cp-wprogres-enabled="true" data-sap-cp-wprogres-prio="20">
+                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"  ><label id="__label110" class="sapCpLabel input-lbl" for="__input66">Teléfono móvil</label></div>
+                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"><input id="__input66" class="sapCpInput txt-input" type="tel" value="+569" maxlength="12" data-sap-cp-validationmessage="El número de teléfono debe tener un símbolo de suma (+) y 5 o más dígitos."></div>
+                <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
+            </div>
+            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-3W" data-sap-cp-key="74DE69F90AEE2F72E1FC6BC75EB6E291291938F1" class="sapCpWidget sapCRLWidget sapCpTextWidget" data-sap-cp-wprogres-enabled="false">
+                <div class="sapCpWidgetContentNoIndent sapCRLWidgetContentNoIndent instrucciones">
+                    <p><span style="font-size: 12pt"><strong><span >¿Estas considerando poder renovar tú vehículo?</span></strong></span></p>
                 </div>
             </div>
-            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-2W"
-                data-sap-cp-key="D74E95E1F9EC30710711C4D2ECA81D35BFDF71B2"
-                class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpWidgetHidden sapCpCInteractionAttribute-YY1_RENOVACION1_MIA sapCpContactAttribute-"
-                data-sap-cp-wprogres-enabled="false">
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"
-                    style=" "><label id="__label45" class="sapCpLabel" for="__down14">Renovación</label></div>
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
-                    <select id="__down14" class="sapCpDropDown">
+            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-4W" data-sap-cp-key="192E9C7166E987495F83E65776F204F7916591BB" class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpWidgetHidden sapCpCInteractionAttribute-YY1_RENOVACION1_MIA sapCpContactAttribute-" data-sap-cp-wprogres-enabled="false">
+                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"  ><label id="__label111" class="sapCpLabel" for="__down29">Renovacion</label></div>
+                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"><select id="__down29" class="sapCpDropDown">
                         <option label="Interesado" value="101" selected="selected">Interesado</option>
                         <option label=" " value=""> </option>
                     </select></div>
                 <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
             </div>
-            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-3W"
-                data-sap-cp-key="FCE31ECF6825228F2A1987B1E58322C8E42639C7"
-                class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpWidgetHidden sapCpCInteractionAttribute-YY1_RENOVACION1_MIA sapCpContactAttribute-"
-                data-sap-cp-wprogres-enabled="false">
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"
-                    style=" "><label id="__label46" class="sapCpLabel" for="__down15">No quiero
-                        renovación</label></div>
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
-                    <select id="__down15" class="sapCpDropDown">
+            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-5W" data-sap-cp-key="A3F68C3914CD8C4E838AD2DA3B46F10BFACAA12D" class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpWidgetHidden sapCpCInteractionAttribute-YY1_RENOVACION1_MIA sapCpContactAttribute-" data-sap-cp-wprogres-enabled="false">
+                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"  ><label id="__label112" class="sapCpLabel" for="__down30">Renovacion</label></div>
+                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"><select id="__down30" class="sapCpDropDown">
                         <option label="No Interesado" value="102" selected="selected">No Interesado</option>
                         <option label=" " value=""> </option>
                     </select></div>
                 <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
             </div>
-            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-4W"
-                data-sap-cp-key="BD7DDD369D56438A992A1E2EC503A0C5940CF026"
-                class="sapCpWidget sapCRLWidget sapCpInteractionWidget sapCpCheckBoxElementWidget"
-                data-sap-cp-wprogres-enabled="false">
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"
-                    style=" "></div>
+            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-6W" data-sap-cp-key="9654513E40C34A525DF0BC094FDF57F344FDBE0F" class="sapCpWidget sapCRLWidget sapCpInteractionWidget sapCpCheckBoxElementWidget" data-sap-cp-wprogres-enabled="false">
+                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"  ></div>
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
-                    <div id="__box14" class="sapCpCheckBox"><input type="checkbox"class="radio" name="fooby[1][]" value="1"></div><label id="__label47"
-                        class="sapCpLabel sapCpLabelRequiredBefore" style="font-size: 19px !important;">Me interesa renovar mi vehículo</label>
+                    <div id="__box29" class="sapCpCheckBox radio"><input type="checkbox" name="fooby[1][]" value="1" class="radio" required></div><label id="__label113" class="sapCpLabel sapCpLabelRequiredBefore">Quiero renovar mi vehículo</label>
                 </div>
                 <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
             </div>
-            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-5W"
-                data-sap-cp-key="65ADB1C153CCB72097446C54F01003A7EE016036"
-                class="sapCpWidget sapCRLWidget sapCpInteractionWidget sapCpCheckBoxElementWidget"
-                data-sap-cp-wprogres-enabled="false">
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"
-                    style=" "></div>
+            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-7W" data-sap-cp-key="42857926D451FCD39022EE5CA3EAE8A8139875FC" class="sapCpWidget sapCRLWidget sapCpInteractionWidget sapCpCheckBoxElementWidget" data-sap-cp-wprogres-enabled="false">
+                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"  ></div>
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
-                    <div id="__box15" class="sapCpCheckBox"><input type="checkbox"class="radio" name="fooby[1][]" value="1"></div><label id="__label48"
-                        class="sapCpLabel sapCpLabelRequiredBefore" style="font-size: 19px !important;">No quiero la Renovación</label>
+                    <div id="__box30" class="sapCpCheckBox radio"><input type="checkbox" name="fooby[1][]" value="1" class="radio" required></div><label id="__label114" class="sapCpLabel sapCpLabelRequiredBefore">No estoy interesado en renovar</label>
                 </div>
                 <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
             </div>
-            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-6W"
-                data-sap-cp-key="66B738736CC16FBAD97C529608256BC5ADED0A5E"
-                class="sapCpWidget sapCRLWidget sapCpButtonWidget" data-sap-cp-follow-up-action="02"
-                data-sap-cp-wprogres-enabled="false">
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"
-                    style=" "></div>
-                <div class="sapCpWidgetContent sapCRLWidgetContent sapCRLWidgetContentLeft contenedor-btn">
-                    <button id="__button46" class="sapCpButton btn-principal" type="button">Enviar</button><span id="__text435"
-                        class="sapCpText sapCpButtonWidgetExtraText sapCpMissingMandatoryFieldText sapCpMissingMandatoryFieldLabel">Rellene
-                        todos los campos correctamente.</span><span id="__text436"
-                        class="sapCpText sapCpButtonWidgetExtraText sapCpErrorMessageText">Se ha producido un error
-                        técnico.</span><span id="__text437"
-                        class="sapCpText sapCpButtonWidgetExtraText sapCpSuccessMessageText sapCpSuccessMessageLabel">Gracias
-                        por confirmar</span></div>
+            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-8W" data-sap-cp-key="5C5DB1D9223D7A609BE1CFA519012F690DFC729C" class="sapCpWidget sapCRLWidget sapCpButtonWidget" data-sap-cp-follow-up-action="01" data-sap-cp-wprogres-enabled="false">
+                <div class="sapCpWidgetContent sapCRLWidgetContent "  ></div>
+                <div class="sapCpWidgetContent sapCRLWidgetContent contenedor-btn">
+                    <div class="btn-center">
+                        <button id="__button61" class="sapCpButton btn-principal" type="button">Enviar</button>
+                    </div>
+                    <span id="__text366" class="sapCpText sapCpButtonWidgetExtraText sapCpMissingMandatoryFieldText sapCpMissingMandatoryFieldLabel">Rellene todos los campos correctamente.</span>
+                    <span id="__text367" class="sapCpText sapCpButtonWidgetExtraText sapCpErrorMessageText">Se ha producido un error técnico.</span>
+                    <span id="__text368" class="sapCpText sapCpButtonWidgetExtraText sapCpSuccessMessageText sapCpSuccessMessageLabel">Gracias por su envío.</span>
+                </div>
                 <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
             </div>
         </div>
-
-
         <div style="min-width: 100%;">
             <img src="assets/7dd2a8da-76a9-4a75-82ba-8fc990870f3c.png" style="width: 100%; object-fit: contain;">
 
@@ -199,6 +172,99 @@
 
     </form>
 </body>
+
+
+<script>
+
+    
+
+    function checkRut(rut) {
+        // Despejar Puntos
+        var valor = rut.value.replace('.','');
+        // Despejar Guión
+        valor = valor.replace('-','');
+
+        // Aislar Cuerpo y Dígito Verificador
+        cuerpo = valor.slice(0,-1);
+        dv = valor.slice(-1).toUpperCase();
+
+        // Formatear RUN
+        rut.value = cuerpo + '-'+ dv
+
+        // Si no cumple con el mínimo ej. (n.nnn.nnn)
+        if(cuerpo.length < 7) { rut.setCustomValidity("RUT Incompleto"); return false;}
+
+        // Calcular Dígito Verificador
+        suma = 0;
+        multiplo = 2;
+
+        // Para cada dígito del Cuerpo
+        for(i=1;i<=cuerpo.length;i++) {
+
+            // Obtener su Producto con el Múltiplo Correspondiente
+            index = multiplo * valor.charAt(cuerpo.length - i);
+
+            // Sumar al Contador General
+            suma = suma + index;
+
+            // Consolidar Múltiplo dentro del rango [2,7]
+            if(multiplo < 7) { multiplo = multiplo + 1; } else { multiplo = 2; }
+
+        }
+
+        // Calcular Dígito Verificador en base al Módulo 11
+        dvEsperado = 11 - (suma % 11);
+
+        // Casos Especiales (0 y K)
+        dv = (dv == 'K')?10:dv;
+        dv = (dv == 0)?11:dv;
+
+        // Validar que el Cuerpo coincide con su Dígito Verificador
+        if(dvEsperado != dv) { rut.setCustomValidity("RUT Inválido"); return false; }
+
+        // Si todo sale bien, eliminar errores (decretar que es válido)
+        rut.setCustomValidity('');
+    }
+
+    $(function(){
+        var requiredCheckboxes = $('input:checkbox[required]');
+        requiredCheckboxes.change(function(){
+            if(requiredCheckboxes.is(':checked')) {
+                requiredCheckboxes.removeAttr('required');
+            } else {
+                requiredCheckboxes.attr('required', 'required');
+            }
+        });
+    });
+
+    $(function() {
+
+        $('#__input26').keydown(function (e) {
+
+            if (e.shiftKey || e.ctrlKey || e.altKey) {
+
+                e.preventDefault();
+
+            } else {
+
+                var key = e.keyCode;
+
+                if (!((key == 8) || (key == 46) || (key >= 35 && key <= 40) || (key >= 48 && key <= 57) || (key == 107) || (key >= 96 && key <= 105) )) {
+
+                    e.preventDefault();
+
+                }
+
+            }
+
+        });
+
+    });
+
+
+
+
+</script>
 
 
 
