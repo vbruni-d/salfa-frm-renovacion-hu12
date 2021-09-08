@@ -232,34 +232,6 @@
         });
     });
 
-    $(function() {
-        $('#__input65').keydown(function (e) {
-            if (e.ctrlKey || e.altKey) {
-                e.preventDefault();
-            } else {
-                var key = e.keyCode;
-                if (!((key == 8) || (key == 46) || (key >= 35 && key <= 40) || (key >= 48 && key <= 57) || (key == 109) || (key >= 96 && key <= 105) || (key == 189)|| (key == 75))) {
-                    e.preventDefault();
-                }
-            }
-        });
-    });
-
-    $(function() {
-        $('#__input66').keydown(function (e) {
-            if (e.shiftKey || e.ctrlKey || e.altKey) {
-                e.preventDefault();
-            } else {
-                var key = e.keyCode;
-                if (!((key == 8) || (key == 46) || (key >= 35 && key <= 40) || (key >= 48 && key <= 57) || (key == 107) || (key >= 96 && key <= 105) )) {
-                    e.preventDefault();
-                }
-            }
-        });
-    });
-
-
-
 </script>
 
 
