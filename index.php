@@ -9,6 +9,11 @@
     <link type="text/css" rel="stylesheet" href="./sapContentPage.css">
     <script src="./sapContentPage.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <style>
+        #Table tr td {
+            border: 1px solid black;
+        }
+    </style>
     <title>Formulario Renovación</title>
 </head>
 
@@ -179,6 +184,14 @@
 
 
     </form>
+    <div>
+        <button id="ajaxo" onclick="feriado()">Ajax call</button>
+
+
+        <br>
+        <table id="Table"></table>
+    </div>
+    
 </body>
 
 
@@ -231,6 +244,32 @@
             }
         });
     });
+
+    function feriado() {
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            url: "https://www.feriadosapp.com/api/holidays.json",
+            success: function(data){        
+                
+                var DatosJson = JSON.parse(JSON.stringify(data));
+                console.log(DatosJson.data.length);
+                $("#Table").append('<tr><td>ID</td>'+
+                '<td>Fecha</td>' + 
+                '<td>Nombre</td>' +
+                '<td>Extra</td>');
+                for (i = 0; i < DatosJson.data.length; i++){
+
+                    $("#Table").append('<tr>' + 
+                    '<td align="center" style="dislay: none;">' + DatosJson.data[i].id + '</td>'+
+                    '<td align="center" style="dislay: none;">' + DatosJson.data[i].date + '</td>'+
+                    '<td align="center" style="dislay: none;">' + DatosJson.data[i].title + '</td>'+
+                    '<td align="center" style="dislay: none;">' + DatosJson.data[i].extra + '</td>'+'</tr>');
+                }
+            }
+        });
+      
+    }
 
 </script>
 
