@@ -326,8 +326,8 @@
         headers: {
             "Authorization": "Basic " + btoa("S0022888059:$alfA.2020"),
             "Access-Control-Allow-Headers": "*",
-            "Access-Control-Allow-Origin", "*",
-            "Access-Control-Allow-Methods", "*"
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "*"
         },
         success: function(data){        
             
