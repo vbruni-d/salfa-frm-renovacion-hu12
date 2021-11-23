@@ -324,7 +324,8 @@
         dataType: "text/xml",
         url: "https://e400060-iflmap.hcisbt.br1.hana.ondemand.com/http/crearactividadc4c",
         headers: {
-            "Authorization": "Basic " + btoa("S0022888059:$alfA.2020")
+            "Authorization": "Basic " + btoa("S0022888059:$alfA.2020"),
+            "Access-Control-Allow-Headers": "*"
         },
         success: function(data){        
             
