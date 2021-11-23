@@ -185,11 +185,8 @@
 
     </form>
     <div>
+        <div id="respuesta">Esto es un DIV</div>
         <button id="ajaxo" onclick="feriado()">Ajax call</button>
-
-
-        <br>
-        <table id="Table"></table>
     </div>
     
 </body>
@@ -246,30 +243,103 @@
     });
 
     function feriado() {
-        $.ajax({
-            type: "GET",
-            dataType: "json",
-            url: "https://www.feriadosapp.com/api/holidays.json",
-            success: function(data){        
-                
-                var DatosJson = JSON.parse(JSON.stringify(data));
-                console.log(DatosJson.data.length);
-                $("#Table").append('<tr><td>ID</td>'+
-                '<td>Fecha</td>' + 
-                '<td>Nombre</td>' +
-                '<td>Extra</td>');
-                for (i = 0; i < DatosJson.data.length; i++){
+    var valores = window.location.search;
+    const urlParams = new URLSearchParams(valores);
+    //var idOpp = urlParams.get('ID_OPP');
+    //var idCuenta = urlParams.get('ID_CLIENTE');
+    //var idContacto = urlParams.get('ID_CONTACTO');
+    //var idResponsable = urlParams.get('ID_RESPONSABLE');
+    //var idCampanha = urlParams.get('utm_campaign');
+    //var idActividad = urlParams.get('sap-outbound-id');
+    var idOpp = '26504';
+    var idCuenta = '1621871';
+    var idContacto = '1625618';
+    var idResponsable = 'A40';
+    var idCampanha = '873';
+    var idActividad = 'C94B2AB03FD4A4D0AA65B630C0AA12F2E177D499';
+    var time = new Date().toJSON();
 
-                    $("#Table").append('<tr>' + 
-                    '<td align="center" style="dislay: none;">' + DatosJson.data[i].id + '</td>'+
-                    '<td align="center" style="dislay: none;">' + DatosJson.data[i].date + '</td>'+
-                    '<td align="center" style="dislay: none;">' + DatosJson.data[i].title + '</td>'+
-                    '<td align="center" style="dislay: none;">' + DatosJson.data[i].extra + '</td>'+'</tr>');
-                }
-            }
-        });
-      
-    }
+    var payloadData = ''+
+    '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:glob="http://sap.com/xi/SAPGlobal20/Global" xmlns:a2o="http://sap.com/xi/AP/CustomerExtension/BYD/A2OER" xmlns:y0h="http://0004557392-one-off.sap.com/Y0H1JNTFY_">'+
+    '<soapenv:Header/>'+
+    '<soapenv:Body>'+
+        '<glob:ActivityReplicationRequest>'+
+            '<MessageHeader/>'+
+            '<ActivityReplicateRequest>'+
+                '<MessageHeader/>'+
+                '<ActivityReplicateRequest actionCode="04" activityPartyListCompleteTransmissionIndicatorCompleteTransmissionIndicator="true">'+
+                    '<ActivityParty contactPersonListCompleteTransmissionIndicator="true">'+
+                        '<RecipientPartyID>'+idCuenta+'</RecipientPartyID>'+
+                        '<RoleCode>34</RoleCode>'+
+                        '<ContactPerson>'+
+                            '<RecipientPartyID>'+idContacto+'</RecipientPartyID>'+
+                            '<RoleCode>ZP</RoleCode>'+
+                            '<MainIndicator>true</MainIndicator>'+
+                        '</ContactPerson>'+
+                        '<MainIndicator>true</MainIndicator>'+
+                    '</ActivityParty>'+
+                    '<BusinessTransactionDocumentReference>'+
+                        '<BusinessTransactionDocumentReference>'+
+                            '<ID>'+idCampanha+'</ID>'+
+                            '<TypeCode>764</TypeCode>'+
+                        '</BusinessTransactionDocumentReference>'+
+                        '<BusinessTransactionDocumentRelationshipRoleCode>1</BusinessTransactionDocumentRelationshipRoleCode>'+
+                    '</BusinessTransactionDocumentReference>'+
+                    '<BusinessTransactionDocumentReference>'+
+                        '<BusinessTransactionDocumentReference>'+
+                            '<ID>'+ idOpp +'</ID>'+
+                            '<TypeCode>72</TypeCode>'+
+                        '</BusinessTransactionDocumentReference>'+
+                        '<BusinessTransactionDocumentRelationshipRoleCode>1</BusinessTransactionDocumentRelationshipRoleCode>'+
+                    '</BusinessTransactionDocumentReference>'+
+                    '<EmployeeResponsibleParty>'+
+                        '<PartyID>'+idResponsable+'</PartyID>'+
+                        '<RoleCode>39</RoleCode>'+
+                    '</EmployeeResponsibleParty>'+
+
+                    '<EndDateTime timeZoneCode="UTC">'+time+'</EndDateTime>'+
+                    '<GroupCode>60</GroupCode>'+
+                    '<ID>'+idActividad+'</ID>'+
+                    '<Name>llamada de confirmación</Name>'+
+                    '<PriorityCode>2</PriorityCode>'+
+                    '<ProcessingTypeCode>0002</ProcessingTypeCode>'+
+                    '<StartDateTime timeZoneCode="UTC">'+time+'</StartDateTime>'+
+                    '<TextCollection textListCompleteTransmissionIndicator="true">'+
+                        '<Text>'+
+                            '<TypeCode>10002</TypeCode>'+
+                            '<ContentText languageCode="ES">Nota visble en crm es generica Especifica pasos a realizar</ContentText>'+
+                        '</Text>'+
+                    '</TextCollection>'+
+                    '<TypeCode>86</TypeCode>'+
+                '</ActivityReplicateRequest>'+
+            '</ActivityReplicateRequest>'+
+        '</glob:ActivityReplicationRequest>'+
+    '</soapenv:Body>'+
+'</soapenv:Envelope>'
+
+
+    $.ajax({
+        type: "POST",
+        data: payloadData,
+        dataType: "text/xml",
+        url: "https://e400060-iflmap.hcisbt.br1.hana.ondemand.com/http/crearactividadc4c",
+        headers: {
+            "Authorization": "Basic " + btoa("S0022888059:$alfA.2020")
+        },
+        success: function(data){        
+            
+            
+            document.getElementById('respuesta').innerHTML=data;
+            
+            
+        },
+        error : function (xhr, ajaxOptions, thrownError){  
+            console.log(xhr.status);          
+            console.log(thrownError);
+        } 
+    });
+  
+}
 
 </script>
 
