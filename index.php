@@ -319,7 +319,7 @@
 
 
     $.ajax({
-        type: "POST",
+        type: "GET",
         data: payloadData,
         dataType: "xml",
         url: "https://e400060-iflmap.hcisbt.br1.hana.ondemand.com/http/crearactividadc4c",
