@@ -32,15 +32,15 @@
                 </div>
 
                 <div>
-                    <p class="subtitulo">Te invitamos a conocer las nuevas posibilidades de renovación que estan disponibles para ti. </p>
-                    <p class="subtitulo-2">Cuentas con diferentes opciones de financiamiento para renovar tu vehículo.</p>
-                    <p class="subtitulo-3">Completa el siguiente formulario y nos pondremos en contacto prontamente.</p>
+                    <!--<p class="subtitulo">Para asegurar que nuestro vendedor lo contacte a la brevedad, nos gustaría que nos confirme su teléfono: </p>
+                    <p class="subtitulo-2">Cuentas con diferentes opciones de financiamiento para renovar tu vehículo.</p>-->
+                    <p class="subtitulo-3">Para asegurar que nuestro vendedor lo contacte a la brevedad, nos gustaría que nos confirme su teléfono:</p>
                 </div>
 
             </div>
             <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-1W" data-sap-cp-key="51F216548E278AA2B0B7F7CABC8D5960C325D670" class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpWidgetMandatory sapCpContactAttribute-YY1_RUT_ENH" data-sap-cp-wprogres-enabled="false" data-sap-cp-wprogres-prio="20">
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"  ><label id="__label109" class="sapCpLabel sapCpLabelRequired input-lbl" for="__input65">Rut</label></div>
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"><input id="__input65" class="sapCpInput txt-input" type="text" required="required" maxlength="10" oninput="checkRut(this);" name="rut"></div>
+                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"  ><label id="__label109" class="sapCpLabel sapCpLabelRequired input-lbl" for="__input65" style="display:none;">Rut</label></div>
+                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"><input id="__input65" class="sapCpInput txt-input" type="hidden" required="required" maxlength="10" oninput="checkRut(this);" name="rut"></div>
                 <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
             </div>
 
@@ -56,7 +56,7 @@
                 </div>
             </div>
 
-            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-3W" data-sap-cp-key="74DE69F90AEE2F72E1FC6BC75EB6E291291938F1" class="sapCpWidget sapCRLWidget sapCpTextWidget" data-sap-cp-wprogres-enabled="false">
+            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-3W" data-sap-cp-key="74DE69F90AEE2F72E1FC6BC75EB6E291291938F1" class="sapCpWidget sapCRLWidget sapCpTextWidget" data-sap-cp-wprogres-enabled="false" style="display:none;">
                 <div class="sapCpWidgetContentNoIndent sapCRLWidgetContentNoIndent instrucciones">
                     <p><span style="font-size: 12pt"><strong><span >¿Estas considerando poder renovar tú vehículo?</span></strong></span></p>
                 </div>
@@ -77,17 +77,17 @@
                     </select></div>
                 <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
             </div>
-            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-6W" data-sap-cp-key="9654513E40C34A525DF0BC094FDF57F344FDBE0F" class="sapCpWidget sapCRLWidget sapCpInteractionWidget sapCpCheckBoxElementWidget" data-sap-cp-wprogres-enabled="false">
+            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-6W" data-sap-cp-key="9654513E40C34A525DF0BC094FDF57F344FDBE0F" class="sapCpWidget sapCRLWidget sapCpInteractionWidget sapCpCheckBoxElementWidget" data-sap-cp-wprogres-enabled="false" style="display:none;">
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"  ></div>
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
-                    <div id="__box29" class="sapCpCheckBox radio"><input type="checkbox" name="fooby[1][]" value="1" class="radio" required></div><label id="__label113" class="sapCpLabel sapCpLabelRequiredBefore">Quiero renovar mi vehículo</label>
+                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft" style="display:none;">
+                    <div id="__box29" class="sapCpCheckBox radio" ><input type="checkbox" name="fooby[1][]" value="1" class="radio" checked></div><label id="__label113" class="sapCpLabel sapCpLabelRequiredBefore">Quiero renovar mi vehículo</label>
                 </div>
                 <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
             </div>
-            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-7W" data-sap-cp-key="42857926D451FCD39022EE5CA3EAE8A8139875FC" class="sapCpWidget sapCRLWidget sapCpInteractionWidget sapCpCheckBoxElementWidget" data-sap-cp-wprogres-enabled="false">
+            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-7W" data-sap-cp-key="42857926D451FCD39022EE5CA3EAE8A8139875FC" class="sapCpWidget sapCRLWidget sapCpInteractionWidget sapCpCheckBoxElementWidget" data-sap-cp-wprogres-enabled="false" style="display:none;">
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"  ></div>
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
-                    <div id="__box30" class="sapCpCheckBox radio"><input type="checkbox" name="fooby[1][]" value="1" class="radio" required></div><label id="__label114" class="sapCpLabel sapCpLabelRequiredBefore">No estoy interesado en renovar</label>
+                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft" style="display:none;">
+                    <div id="__box30" class="sapCpCheckBox radio"><input type="checkbox" name="fooby[1][]" value="1" class="radio" ></div><label id="__label114" class="sapCpLabel sapCpLabelRequiredBefore">No estoy interesado en renovar</label>
                 </div>
                 <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
             </div>
@@ -194,7 +194,7 @@
 
 <script>
 
-
+    $(document)
 
     function checkRut(rut) {
         // Despejar Puntos
@@ -242,32 +242,31 @@
         });
     });
 
+    function sumarDias(fecha, dias){
+      fecha.setDate(fecha.getDate() + dias);
+      return fecha;
+    }
+
     function feriado() {
     var valores = window.location.search;
     const urlParams = new URLSearchParams(valores);
-    //var idOpp = urlParams.get('ID_OPP');
-    //var idCuenta = urlParams.get('ID_CLIENTE');
-    //var idContacto = urlParams.get('ID_CONTACTO');
-    //var idResponsable = urlParams.get('ID_RESPONSABLE');
+    var idOpp = urlParams.get('ID_OPP');
+    var idCuenta = parseInt(urlParams.get('ID_CLIENTE'), 10);
+    var idContacto = parseInt(urlParams.get('ID_CONTACTO'), 10);
+    var idResponsable = parseInt(urlParams.get('ID_RESPONSABLE'), 10);
     //var idCampanha = urlParams.get('utm_campaign');
-    //var idActividad = urlParams.get('sap-outbound-id');
-    var idOpp = '26504';
-    var idCuenta = '1621871';
-    var idContacto = '1625618';
-    var idResponsable = 'A40';
-    var idCampanha = '873';
-    var idActividad = 'C94B2AB03FD4A4D0AA65B630C0AA12F2E177D499';
-    var time = new Date().toJSON();
-
+    var idActividad = urlParams.get('sap-outbound-id');
+    
+    var newTime = new Date();
+    var time = newTime.toJSON();
+    var time2 = sumarDias(newTime, 2).toJSON();
     var payloadData = ''+
-    '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:glob="http://sap.com/xi/SAPGlobal20/Global" xmlns:a2o="http://sap.com/xi/AP/CustomerExtension/BYD/A2OER" xmlns:y0h="http://0004557392-one-off.sap.com/Y0H1JNTFY_">'+
-    '<soapenv:Header/>'+
-    '<soapenv:Body>'+
-        '<glob:ActivityReplicationRequest>'+
-            '<MessageHeader/>'+
-            '<ActivityReplicateRequest>'+
-                '<MessageHeader/>'+
-                '<ActivityReplicateRequest actionCode="04" activityPartyListCompleteTransmissionIndicatorCompleteTransmissionIndicator="true">'+
+    '<n0:TaskActivityBundleMaintainRequest_sync_V1 xmlns:n0="http://sap.com/xi/SAPGlobal20/Global"> '+
+        '<BasicMessageHeader>'+
+            
+        '</BasicMessageHeader>'+
+                '<ActivityTask actionCode="01" >'+
+                    '<ProcessorParty> <BusinessPartnerInternalID>'+idResponsable+'</BusinessPartnerInternalID> </ProcessorParty>'+
                     '<ActivityParty contactPersonListCompleteTransmissionIndicator="true">'+
                         '<RecipientPartyID>'+idCuenta+'</RecipientPartyID>'+
                         '<RoleCode>34</RoleCode>'+
@@ -278,32 +277,22 @@
                         '</ContactPerson>'+
                         '<MainIndicator>true</MainIndicator>'+
                     '</ActivityParty>'+
-                    '<BusinessTransactionDocumentReference>'+
-                        '<BusinessTransactionDocumentReference>'+
-                            '<ID>'+idCampanha+'</ID>'+
-                            '<TypeCode>764</TypeCode>'+
-                        '</BusinessTransactionDocumentReference>'+
-                        '<BusinessTransactionDocumentRelationshipRoleCode>1</BusinessTransactionDocumentRelationshipRoleCode>'+
-                    '</BusinessTransactionDocumentReference>'+
-                    '<BusinessTransactionDocumentReference>'+
-                        '<BusinessTransactionDocumentReference>'+
-                            '<ID>'+ idOpp +'</ID>'+
-                            '<TypeCode>72</TypeCode>'+
-                        '</BusinessTransactionDocumentReference>'+
-                        '<BusinessTransactionDocumentRelationshipRoleCode>1</BusinessTransactionDocumentRelationshipRoleCode>'+
-                    '</BusinessTransactionDocumentReference>'+
+                            
+                        '<BusinessTransactionDocumentReference><ID>'+idOpp+'</ID><TypeCode>72</TypeCode><RoleCode>1</RoleCode></BusinessTransactionDocumentReference>'+
+                        //'<BusinessTransactionDocumentReference><ID>'+idCampanha+'</ID><TypeCode>764</TypeCode><RoleCode>1</RoleCode></BusinessTransactionDocumentReference>'+
                     '<EmployeeResponsibleParty>'+
                         '<PartyID>'+idResponsable+'</PartyID>'+
                         '<RoleCode>39</RoleCode>'+
                     '</EmployeeResponsibleParty>'+
-
+                    '<ReferenceParty><BusinessPartnerInternalID>'+idContacto+'</BusinessPartnerInternalID></ReferenceParty>'+
+                    '<MainActivityParty><BusinessPartnerInternalID>'+idCuenta+'</BusinessPartnerInternalID></MainActivityParty>'+
                     '<EndDateTime timeZoneCode="UTC">'+time+'</EndDateTime>'+
-                    '<GroupCode>60</GroupCode>'+
-                    '<ID>'+idActividad+'</ID>'+
+                    '<GroupCode>0002</GroupCode>'+
+                    
                     '<Name>llamada de confirmación</Name>'+
                     '<PriorityCode>2</PriorityCode>'+
                     '<ProcessingTypeCode>0002</ProcessingTypeCode>'+
-                    '<StartDateTime timeZoneCode="UTC">'+time+'</StartDateTime>'+
+                    '<StartDateTime timeZoneCode="UTC">'+time2+'</StartDateTime>'+
                     '<TextCollection textListCompleteTransmissionIndicator="true">'+
                         '<Text>'+
                             '<TypeCode>10002</TypeCode>'+
@@ -311,24 +300,20 @@
                         '</Text>'+
                     '</TextCollection>'+
                     '<TypeCode>86</TypeCode>'+
-                '</ActivityReplicateRequest>'+
-            '</ActivityReplicateRequest>'+
-        '</glob:ActivityReplicationRequest>'+
-    '</soapenv:Body>'+
-'</soapenv:Envelope>'
+                '</ActivityTask>'+
+            '</n0:TaskActivityBundleMaintainRequest_sync_V1>'
 
 
     $.ajax({
-        type: "GET",
+        type: "POST",
         data: payloadData,
-        dataType: "xml",
-        url: "https://e400060-iflmap.hcisbt.br1.hana.ondemand.com/http/crearactividadc4c",
+        async: false;
+        dataType: "text/xml",
+        url: "https://cors-anywhere.herokuapp.com/https://e400060-iflmap.hcisbt.br1.hana.ondemand.com/http/crearactividadc4c",
+        crossDomain: true,
         headers: {
             "Authorization": "Basic " + btoa("S0022888059:$alfA.2020"),
-            "Access-Control-Allow-Headers": "*",
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "*",
-            "Access-Control-Expose-Headers": "Content-Length,API-Key"
+            
         },
         success: function(data){        
             
