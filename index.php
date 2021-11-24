@@ -306,7 +306,7 @@
     $.ajax({
         type: "POST",
         data: payloadData,
-        async: false;
+        async: false,
         dataType: "text/xml",
         url: "https://cors-anywhere.herokuapp.com/https://e400060-iflmap.hcisbt.br1.hana.ondemand.com/http/crearactividadc4c",
         crossDomain: true,
