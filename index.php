@@ -17,7 +17,7 @@
     <title>Formulario Renovación</title>
 </head>
 
-<body class="sapCpBody cuerpo">
+<body class="sapCpBody cuerpo" onload="crearActividadenC4C()">
     <form id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage" data-sap-cp-key="53778308B371A4684DDABABAE4E22F6B1E20E912" class="sapCpContentPage sapCRLPage sapCpContentPageLoading formulario" data-sap-cp-lpkey="" data-sap-cp-prefill-data="true" data-sap-cp-progres-enabled="true" data-sap-cp-progres-max="1" data-sap-cp-version="20.0.5">
         <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L" data-sap-cp-key="2573E92CD3674E2D05B2239FB282DD33368E4333" class="sapCpLayout sapCRLLayout sapCRLLayoutVertical">
 
@@ -38,7 +38,7 @@
                 </div>
 
             </div>
-            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-1W" data-sap-cp-key="51F216548E278AA2B0B7F7CABC8D5960C325D670" class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpWidgetMandatory sapCpContactAttribute-YY1_RUT_ENH" data-sap-cp-wprogres-enabled="false" data-sap-cp-wprogres-prio="20">
+            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-1W" data-sap-cp-key="51F216548E278AA2B0B7F7CABC8D5960C325D670" class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpWidgetMandatory sapCpContactAttribute-YY1_RUT_ENH" data-sap-cp-wprogres-enabled="false" data-sap-cp-wprogres-prio="20" style="display:none;>
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"  ><label id="__label109" class="sapCpLabel sapCpLabelRequired input-lbl" for="__input65" style="display:none;">Rut</label></div>
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"><input id="__input65" class="sapCpInput txt-input" type="hidden" required="required" maxlength="10" oninput="checkRut(this);" name="rut"></div>
                 <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
@@ -184,10 +184,7 @@
 
 
     </form>
-    <div>
-        <div id="respuesta">Esto es un DIV</div>
-        <button id="ajaxo" onclick="feriado()">Ajax call</button>
-    </div>
+    
     
 </body>
 
@@ -247,7 +244,7 @@
       return fecha;
     }
 
-    function feriado() {
+    function crearActividadenC4C() {
     var valores = window.location.search;
     const urlParams = new URLSearchParams(valores);
     var idOpp = urlParams.get('ID_OPP');
