@@ -288,7 +288,7 @@
                     '<EndDateTime timeZoneCode="UTC">'+time2+'</EndDateTime>'+
                     '<GroupCode>0002</GroupCode>'+
                     
-                    '<Name>llamada de confirmación</Name>'+
+                    '<Name>Llamado de Acelerador de Venta por Opp:'+idOpp+'</Name>'+
                     '<PriorityCode>2</PriorityCode>'+
                     '<ProcessingTypeCode>0002</ProcessingTypeCode>'+
                     '<StartDateTime timeZoneCode="UTC">'+time+'</StartDateTime>'+
