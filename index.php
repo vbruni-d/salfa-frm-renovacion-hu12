@@ -17,7 +17,7 @@
     <title>Formulario Renovación</title>
 </head>
 
-<body class="sapCpBody cuerpo" onload="crearActividadenC4C()">
+<body class="sapCpBody cuerpo" >
     <form id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage" data-sap-cp-key="53778308B371A4684DDABABAE4E22F6B1E20E912" class="sapCpContentPage sapCRLPage sapCpContentPageLoading formulario" data-sap-cp-lpkey="" data-sap-cp-prefill-data="true" data-sap-cp-progres-enabled="true" data-sap-cp-progres-max="1" data-sap-cp-version="20.0.5">
         <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L" data-sap-cp-key="2573E92CD3674E2D05B2239FB282DD33368E4333" class="sapCpLayout sapCRLLayout sapCRLLayoutVertical">
 
@@ -191,7 +191,9 @@
 
 <script>
 
-    $(document)
+    document.addEventListener("DOMContentLoaded", function(){
+        crearActividadenC4C();
+    });
 
     function checkRut(rut) {
         // Despejar Puntos
