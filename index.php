@@ -285,13 +285,13 @@
                     '</EmployeeResponsibleParty>'+
                     '<ReferenceParty><BusinessPartnerInternalID>'+idContacto+'</BusinessPartnerInternalID></ReferenceParty>'+
                     '<MainActivityParty><BusinessPartnerInternalID>'+idCuenta+'</BusinessPartnerInternalID></MainActivityParty>'+
-                    '<EndDateTime timeZoneCode="UTC">'+time+'</EndDateTime>'+
+                    '<EndDateTime timeZoneCode="UTC">'+time2+'</EndDateTime>'+
                     '<GroupCode>0002</GroupCode>'+
                     
                     '<Name>llamada de confirmación</Name>'+
                     '<PriorityCode>2</PriorityCode>'+
                     '<ProcessingTypeCode>0002</ProcessingTypeCode>'+
-                    '<StartDateTime timeZoneCode="UTC">'+time2+'</StartDateTime>'+
+                    '<StartDateTime timeZoneCode="UTC">'+time+'</StartDateTime>'+
                     '<TextCollection textListCompleteTransmissionIndicator="true">'+
                         '<Text>'+
                             '<TypeCode>10002</TypeCode>'+
