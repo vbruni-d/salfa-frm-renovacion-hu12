@@ -38,9 +38,9 @@
                 </div>
 
             </div>
-            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-1W" data-sap-cp-key="51F216548E278AA2B0B7F7CABC8D5960C325D670" class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpWidgetMandatory sapCpContactAttribute-YY1_RUT_ENH" data-sap-cp-wprogres-enabled="false" data-sap-cp-wprogres-prio="20" style="display:none;>
+            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-1W" data-sap-cp-key="51F216548E278AA2B0B7F7CABC8D5960C325D670" class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpWidgetMandatory sapCpContactAttribute-YY1_RUT_ENH" data-sap-cp-wprogres-enabled="false" data-sap-cp-wprogres-prio="20" style="display:none;">
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"  ><label id="__label109" class="sapCpLabel sapCpLabelRequired input-lbl" for="__input65" style="display:none;">Rut</label></div>
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"><input id="__input65" class="sapCpInput txt-input" type="hidden" required="required" maxlength="10" oninput="checkRut(this);" name="rut"></div>
+                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"><input id="__input65" class="sapCpInput txt-input" type="hidden"  maxlength="10" oninput="checkRut(this);" name="rut"></div>
                 <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
             </div>
 
