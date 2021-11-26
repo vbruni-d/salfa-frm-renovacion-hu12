@@ -253,7 +253,7 @@
     var idCuenta = parseInt(urlParams.get('ID_CLIENTE'), 10);
     var idContacto = parseInt(urlParams.get('ID_CONTACTO'), 10);
     var idResponsable = parseInt(urlParams.get('ID_RESPONSABLE'), 10);
-    //var idCampanha = urlParams.get('utm_campaign');
+    var idCampanha = urlParams.get('utm_campaign');
     var idActividad = urlParams.get('sap-outbound-id');
     
     var newTime = new Date();
