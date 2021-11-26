@@ -278,7 +278,7 @@
                     '</ActivityParty>'+
                             
                         '<BusinessTransactionDocumentReference><ID>'+idOpp+'</ID><TypeCode>72</TypeCode><RoleCode>1</RoleCode></BusinessTransactionDocumentReference>'+
-                        //'<BusinessTransactionDocumentReference><ID>'+idCampanha+'</ID><TypeCode>764</TypeCode><RoleCode>1</RoleCode></BusinessTransactionDocumentReference>'+
+                        '<BusinessTransactionDocumentReference><ID>'+idCampanha+'</ID><TypeCode>764</TypeCode><RoleCode>1</RoleCode></BusinessTransactionDocumentReference>'+
                     '<EmployeeResponsibleParty>'+
                         '<PartyID>'+idResponsable+'</PartyID>'+
                         '<RoleCode>39</RoleCode>'+
