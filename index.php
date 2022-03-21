@@ -38,11 +38,6 @@
                 </div>
 
             </div>
-            <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-1W" data-sap-cp-key="51F216548E278AA2B0B7F7CABC8D5960C325D670" class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpWidgetMandatory sapCpContactAttribute-YY1_RUT_ENH" data-sap-cp-wprogres-enabled="false" data-sap-cp-wprogres-prio="20" style="display:none;">
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"  ><label id="__label109" class="sapCpLabel sapCpLabelRequired input-lbl" for="__input65" style="display:none;">Rut</label></div>
-                <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft"><input id="__input65" class="sapCpInput txt-input" type="hidden"  maxlength="10" oninput="checkRut(this);" name="rut"></div>
-                <div class="sapCpWidgetFixContent sapCRLWidgetFixContent"></div>
-            </div>
 
             <div id="application-MarketingContent-manage-component---ObjectView--DesignView--ContentPage-0L-2W" data-sap-cp-key="66278973025179DD192D59D88329532EE4DA8D4D" class="sapCpWidget sapCRLWidget sapCpInputWidget sapCpContactAttribute-TELNR_MOBILE" data-sap-cp-wprogres-enabled="true" data-sap-cp-wprogres-prio="10">
                 <div class="sapCpWidgetContent sapCpWidgetContentLeft sapCRLWidgetContent sapCRLWidgetContentLeft">
@@ -190,11 +185,27 @@
 
 
 <script>
+        $("#__button61").click(function() {
+        var url = window.location.href;
+        var dataString = {"url":url};
+        $.ajax({
+            url: 'integracionC4C.php',
+            type: "POST",
+            data: dataString,
+            asycn:false,
 
-    document.addEventListener("DOMContentLoaded", function(){
-        crearActividadenC4C();
+            success: function(data) {
+                document.getElementById('respuesta').innerHTML = data;
+
+            },
+            error: function(xhr, ajaxOptions, thrownError) {
+                console.log(xhr.status);
+                console.log(thrownError);
+            }
+        });
     });
 
+    
     function checkRut(rut) {
         // Despejar Puntos
         var valor = rut.value.replace('.','');
@@ -245,89 +256,6 @@
       fecha.setDate(fecha.getDate() + dias);
       return fecha;
     }
-
-    function crearActividadenC4C() {
-    var valores = window.location.search;
-    const urlParams = new URLSearchParams(valores);
-    var idOpp = urlParams.get('ID_OPP');
-    var idCuenta = parseInt(urlParams.get('ID_CLIENTE'), 10);
-    var idContacto = parseInt(urlParams.get('ID_CONTACTO'), 10);
-    var idResponsable = parseInt(urlParams.get('ID_RESPONSABLE'), 10);
-    var idCampanha = urlParams.get('utm_campaign');
-    var idActividad = urlParams.get('sap-outbound-id');
-    
-    var newTime = new Date();
-    var time = newTime.toJSON();
-    var time2 = sumarDias(newTime, 2).toJSON();
-    var payloadData = ''+
-    '<n0:TaskActivityBundleMaintainRequest_sync_V1 xmlns:n0="http://sap.com/xi/SAPGlobal20/Global"> '+
-        '<BasicMessageHeader>'+
-            
-        '</BasicMessageHeader>'+
-                '<ActivityTask actionCode="01" >'+
-                    '<ProcessorParty> <BusinessPartnerInternalID>'+idResponsable+'</BusinessPartnerInternalID> </ProcessorParty>'+
-                    '<ActivityParty contactPersonListCompleteTransmissionIndicator="true">'+
-                        '<RecipientPartyID>'+idCuenta+'</RecipientPartyID>'+
-                        '<RoleCode>34</RoleCode>'+
-                        '<ContactPerson>'+
-                            '<RecipientPartyID>'+idContacto+'</RecipientPartyID>'+
-                            '<RoleCode>ZP</RoleCode>'+
-                            '<MainIndicator>true</MainIndicator>'+
-                        '</ContactPerson>'+
-                        '<MainIndicator>true</MainIndicator>'+
-                    '</ActivityParty>'+
-                            
-                        '<BusinessTransactionDocumentReference><ID>'+idOpp+'</ID><TypeCode>72</TypeCode><RoleCode>1</RoleCode></BusinessTransactionDocumentReference>'+
-                        '<BusinessTransactionDocumentReference><ID>'+idCampanha+'</ID><TypeCode>764</TypeCode><RoleCode>1</RoleCode></BusinessTransactionDocumentReference>'+
-                    '<EmployeeResponsibleParty>'+
-                        '<PartyID>'+idResponsable+'</PartyID>'+
-                        '<RoleCode>39</RoleCode>'+
-                    '</EmployeeResponsibleParty>'+
-                    '<ReferenceParty><BusinessPartnerInternalID>'+idContacto+'</BusinessPartnerInternalID></ReferenceParty>'+
-                    '<MainActivityParty><BusinessPartnerInternalID>'+idCuenta+'</BusinessPartnerInternalID></MainActivityParty>'+
-                    '<EndDateTime timeZoneCode="UTC">'+time2+'</EndDateTime>'+
-                    '<GroupCode>0002</GroupCode>'+
-                    
-                    '<Name>Llamado de Acelerador de Venta por Opp:'+idOpp+'</Name>'+
-                    '<PriorityCode>2</PriorityCode>'+
-                    '<ProcessingTypeCode>0002</ProcessingTypeCode>'+
-                    '<StartDateTime timeZoneCode="UTC">'+time+'</StartDateTime>'+
-                    '<TextCollection textListCompleteTransmissionIndicator="true">'+
-                        '<Text>'+
-                            '<TypeCode>10002</TypeCode>'+
-                            '<ContentText languageCode="ES">Nota visble en crm es generica Especifica pasos a realizar</ContentText>'+
-                        '</Text>'+
-                    '</TextCollection>'+
-                    '<TypeCode>86</TypeCode>'+
-                '</ActivityTask>'+
-            '</n0:TaskActivityBundleMaintainRequest_sync_V1>'
-
-
-    $.ajax({
-        type: "POST",
-        data: payloadData,
-        async: false,
-        dataType: "text/xml",
-        url: "https://cors-anywhere.herokuapp.com/https://e400060-iflmap.hcisbt.br1.hana.ondemand.com/http/crearactividadc4c",
-        crossDomain: true,
-        headers: {
-            "Authorization": "Basic " + btoa("S0022888059:$alfA.2020"),
-            
-        },
-        success: function(data){        
-            
-            
-            document.getElementById('respuesta').innerHTML=data;
-            
-            
-        },
-        error : function (xhr, ajaxOptions, thrownError){  
-            console.log(xhr.status);          
-            console.log(thrownError);
-        } 
-    });
-  
-}
 
 </script>
 
